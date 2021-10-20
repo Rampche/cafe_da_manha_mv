@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Café da manhã MV</title>
+	<style>
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			background-image: linear-gradient(to right, rgb(28, 101, 121),rgb(34, 139, 129));
+		}
+		.box{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: rgba(0, 0, 0, 0.15);
+			height: 100%;
+			width:35%;
+			border-radius: 5px;
+			color: white;
+			overflow-y: scroll;
+		}
+		fieldset{
+			border: 3px solid white;
+			border-radius: 5px;
+			font-color: white;
+		}
+		legend{
+			border: 1px;
+			padding: 5px;
+			background-color: none;
+			border-radius: 5px;
+			color: white;
+		}
+		img{
+			height: auto;
+			width: 100%;
+			border-radius: 3px;
+		}
+		p{
+			font-family:Arial, Helvetica, sans-serif;
+			text-align: justify;
+			font-size: 14px;
+		}
+		.labelInput{
+			font-family: Arial;
+			color: white;
+			font-size: 13px;
+		}
+		.bebidas{
+			color: white;
+			font-size: 14px;
+		}
+		#submit{
+			background: solid white;
+			transition: 1s;
+			text-align: center;
+			cursor: pointer;
+			width: 100%;
+			border:none;
+			padding: 3px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<fieldset>
+			<legend align="center"><b>Café da manhã MV Sistemas</b></legend>
+			<br>
+			<img src="https://i.postimg.cc/Mp5N7V47/logomarca-mv.png">
+			<br>
+			<p><b>Seja bem-vindo ao nosso café da manhã. Você poderá escolher uma opção entre cada uma das alternativas que constam a seguir.</b></p>
+			<p><b>Seja caprichoso na escolha para dividir muita alegria, comida e boas conversas nesse nosso momento de descontração!</b></p>
+			<br>
+			<p><b>Bebidas</b></p>
+			<div class="bebidas">
+				<input type="radio" name="bebidas" class="radioInput" value="achocolatado" required>
+				<label for="bebidas" class="labelInput"><b>Achocolatado</b></label> 
+			</div>
+			<div class="bebidas">
+				<input type="radio" name="bebidas" class="radioInput" value="suco_de_laranja" required>
+				<label for="bebidas" class="labelInput"><b>Suco de Laranja</b></label> 
+			</div>
+			<div class="bebidas">
+				<input type="radio" name="bebidas" class="radioInput" value="suco_de_acerola" required>
+				<label for="bebidas" class="labelInput"><b>Suco de Acerola</b></label> 
+			</div>
+			<div class="bebidas">
+				<input type="radio" name="bebidas" class="radioInput" value="cha" required>
+				<label for="bebidas" class="labelInput"><b>Chá</b></label> 
+			</div>
+			<div class="bebidas">
+				<input type="radio" name="bebidas" class="radioInput" value="iogurte" required>
+				<label for="bebidas" class="labelInput"><b>Iogurte</b></label> 
+			</div>
+			<p><b>Frutas</b></p>
+			<div class="frutas">
+				<input type="radio" name="frutas" class="radioInput" value="melancia" required>
+				<label for=frutas class="labelInput"><b>Melancia</b></label>
+			</div>
+			<div class="frutas">
+				<input type="radio" name="frutas" class="radioInput" value="melao" required>
+				<label for=frutas class="labelInput"><b>Melão</b></label>
+			</div>
+			<div class="frutas">
+				<input type="radio" name="frutas" class="radioInput" value="kiwi" required>
+				<label for=frutas class="labelInput"><b>Kiwi</b></label>
+			</div>
+			<div class="frutas">
+				<input type="radio" name="frutas" class="radioInput" value="banana" required>
+				<label for=frutas class="labelInput"><b>Banana</b></label>
+			</div>
+			<p><b>Lanches</b></p>
+			<div class="lanches">
+				<input type="radio" name="lanches" class="radioInput" value="empada" required>
+				<label for=lanches class="labelInput"><b>Empada</b></label>
+			</div>
+			<div class="lanches">
+				<input type="radio" name="lanches" class="radioInput" value="coxinha" required>
+				<label for=lanches class="labelInput"><b>Coxinha</b></label>
+			</div>
+			<div class="lanches">
+				<input type="radio" name="lanches" class="radioInput" value="pao_de_queijo" required>
+				<label for=lanches class="labelInput"><b>Pão de Queijo</b></label>
+			</div>
+			<div class="lanches">
+				<input type="radio" name="lanches" class="radioInput" value="croissant" required>
+				<label for=lanches class="labelInput"><b>Croissant</b></label>
+			</div>
+			<div class="lanches">
+				<input type="radio" name="lanches" class="radioInput" value="minissanduíches" required>
+				<label for=lanches class="labelInput"><b>Minissanduíches</b></label>
+			</div>
+			<p><b>Comidas</b></p>
+			<div class="comidas">
+				<input type="radio" name="comidas" class="radioInput" value="pao_de_caixa" required>
+				<label for=comidas class="labelInput"><b>Pão de Caixa</b></label>
+			</div>
+			<div class="comidas">
+				<input type="radio" name="comidas" class="radioInput" value="queijo" required>
+				<label for=comidas class="labelInput"><b>Queijo</b></label>
+			</div>
+			<div class="comidas">
+				<input type="radio" name="comidas" class="radioInput" value="presunto_mortadela" required>
+				<label for=comidas class="labelInput"><b>Presunto/Mortadela</b></label>
+			</div>
+			<div class="comidas">
+				<input type="radio" name="comidas" class="radioInput" value="ovo_mexido" required>
+				<label for=comidas class="labelInput"><b>Ovo Mexido</b></label>
+			</div>
+			<div class="comidas">
+				<input type="radio" name="comidas" class="radioInput" value="cuscuz" required>
+				<label for=comidas class="labelInput"><b>Cuscuz</b></label>
+			</div>
+			<div class="comidas">
+				<input type="radio" name="comidas" class="radioInput" value="salsicha" required>
+				<label for=comidas class="labelInput"><b>Salsicha</b></label>
+			</div>
+			<p><b>Bolos</b></p>
+			<div class="bolos">
+				<input type="radio" name="bolos" class="radioInput" value="bolo_de_cenoura" required>
+				<label for=bolos class="labelInput"><b>Bolo de Cenoura</b></label>
+			</div>
+			<div class="bolos">
+				<input type="radio" name="bolos" class="radioInput" value="bolo_de_milho" required>
+				<label for=bolos class="labelInput"><b>Bolo de Milho</b></label>
+			</div>
+			<div class="bolos">
+				<input type="radio" name="bolos" class="radioInput" value="bolo_de_laranja" required>
+				<label for=bolos class="labelInput"><b>Bolo de Laranja</b></label>
+			</div>
+			<div class="bolos">
+				<input type="radio" name="bolos" class="radioInput" value="bolo_de_macaxeira" required>
+				<label for=bolos class="labelInput"><b>Bolo de Macaxeira</b></label>
+			</div>
+			<div class="bolos">
+				<input type="radio" name="bolos" class="radioInput" value="bolo_de_rolo" required>
+				<label for=bolos class="labelInput"><b>Bolo de Rolo</b></label>
+			</div>
+			<div class="bolos">
+				<input type="radio" name="bolos" class="radioInput" value="bolo_formigueiro" required>
+				<label for=bolos class="labelInput"><b>Bolo Formigueiro</b></label>
+			</div>
+			<br><br>
+			<div class="submit">
+			<input type="submit" name="submit" id="submit" value="Enviar escolhas">
+			</div>
+		</fieldset>
+	</div>
+</body>
+</html>
